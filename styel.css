@@ -125,7 +125,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -133,41 +133,45 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-*{
+* {
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
-.wrap{
+body {
+  font-family: Microsoft JhengHei;
+}
+.wrap {
   width: 1200px;
   margin: 0 auto;
 }
-.title{
+.title {
   background: #eee;
   padding: 4px;
 }
-.title li{
+.title li {
   display: flex;
   justify-content: end;
 }
-.title li a{
+.title li a {
   display: inline-flex;
   margin-right: 10px;
   text-decoration: none;
 }
-.facebook{
+.facebook {
   color: #3f3fa8;
   padding: 2px 8px 2px 0;
   border-right: 1px solid #ddd;
 }
-.twitter{
+.twitter {
   color: #0080ff;
   padding: 2px 0;
 }
-.menu{
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.menu h1 a{
+.menu h1 a {
   display: block;
   background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
   width: 224px;
@@ -176,22 +180,172 @@ table {
   overflow: hidden;
   white-space: nowrap;
 }
-.menu ul{
+.menu ul {
   display: flex;
   align-items: center;
 }
-.menu ul li{
+.menu ul li {
   margin: 0 20px;
 }
-.menu ul li a{
-  padding: 10px 8px;
+.menu ul li a {
+  padding: 12px 8px;
   text-decoration: none;
   color: #14ce9f;
   font-weight: bold;
 }
-.menu ul li a:hover{
+.menu ul li a:hover {
   box-shadow: 0 3px 0 #14ce9f;
 }
-.banner img{
+.banner img {
   width: 100%;
+}
+.bannerImage {
+  width: 100%;
+  height: 400px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+  background-size: cover;
+  padding: 120px 0;
+}
+.bannerImage h2 {
+  padding: 30px;
+  font-size: 34px;
+  color: #fff;
+  line-height: 1.5;
+  background: rgba(0, 0, 0, 0.2);
+}
+.course {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 66px auto;
+  line-height: 1.4;
+}
+.course li img {
+  width: 100%;
+}
+.course li {
+  width: 100%;
+  margin: 0 15px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 5px #ccc;
+}
+.course h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.courselist p {
+  text-align: left;
+}
+.courselist li {
+  margin-left: 1em;
+  padding: 0;
+  text-align: left;
+  list-style: disc;
+  box-shadow: 0 0 0;
+}
+.content {
+  margin-bottom: 50px;
+}
+.content h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.content table {
+  margin: 0 auto;
+}
+.content td {
+  padding: 10px 100px 10px 10px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.content th {
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 10px 100px 10px 10px;
+  font-weight: bold;
+  text-align: left;
+}
+.highlight {
+  color: #00a67d;
+}
+.information {
+  width: 100%;
+  background: linear-gradient(#00644b, #009872);
+  padding-bottom: 30px;
+}
+.information h2 {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.6;
+}
+.information-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.message {
+  margin: 0 20px;
+  width: 100%;
+}
+.message textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border-radius: 4px;
+  border: none;
+}
+.contact {
+  margin: 0 20px;
+  width: 100%;
+}
+.contact label {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+.contact input {
+  display: inline-block;
+  width: 100%;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+.contact .submit {
+  width: 70px;
+  height: 34px;
+  background: #0c9;
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  margin: 4px 0 0 0;
+}
+.contact .submit:hover {
+  background: #00644b;
+  cursor: pointer;
+}
+.footer {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer ul {
+  line-height: 1.5;
+}
+.footer li {
+  font-weight: bold;
+}
+.footer li a {
+  text-decoration: none;
+  color: #e12d80;
 }
